@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/sections/Header";
 import "./globals.css";
+import Footer from "@/sections/Footer";
 
 export const metadata: Metadata = {
   title: "Devendra Mishra - Engineer.",
@@ -15,8 +16,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        {children}
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
