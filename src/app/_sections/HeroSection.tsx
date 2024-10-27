@@ -3,7 +3,7 @@ import { Instagram, Twitter, Linkedin, Github } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col min-h-screen px-4 mt-24 sm:px-6 lg:px-8">
+    <section className="flex flex-col min-h-screen mt-24 ">
       <div className="space-y-6">
         <h1 className="text-4xl font-bold leading-tight tracking-tighter sm:text-5xl md:text-6xl">
           Hello Visitor, I&apos;m{" "}
