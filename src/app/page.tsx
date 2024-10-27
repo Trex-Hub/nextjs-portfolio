@@ -1,8 +1,11 @@
 import "./globals.css";
+import HeroSection from "./_sections/HeroSection";
 export default function Home() {
   return (
-    <h4 className="text-center text-2xl font-bold mt-40">
-      Welcome to my Portfolio
-    </h4>
+    <>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <HeroSection />
+      </div>
+    </>
   );
 }
